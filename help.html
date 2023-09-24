@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="help.css">
+    <style>
+        /* CSS for FAQ Page */
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .answer {
+            display: none;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./complains.html">Complaints</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="https://www.google.com/maps/@31.0166075,77.0703414,16z?entry=ttu">Location</a></li>
+
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="#loginform">Login</a></li> <!-- Added a login option -->
+    </ul>
+
+</nav>
+
+
+<h1>Frequently Asked Questions</h1>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer(1)">1. What is smart waste management?</div>
+        <div class="answer" id="answer1">Smart waste management is an advanced approach to handling waste...</div>
+
+        <div class="question" onclick="toggleAnswer(2)">2. How does smart waste management work?</div>
+        <div class="answer" id="answer2">Smart waste management systems use sensors placed in waste bins...</div>
+
+        <div class="question" onclick="toggleAnswer(3)">3. What are the benefits of smart waste management?</div>
+        <div class="answer" id="answer3">The benefits of smart waste management include cost savings, reduced environmental impact...</div>
+
+        <!-- Add more questions and answers as needed -->
+    </div>
+
+    <script>
+        // JavaScript function to toggle answers
+        function toggleAnswer(questionNumber) {
+            var answer = document.getElementById("answer" + questionNumber);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>

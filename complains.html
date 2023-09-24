@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Complaint Form</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Waste Management Complaint Form</h1>
+    </header>
+    <img src="./" alt="">
+
+
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="https://www.google.com/maps/@31.0166075,77.0703414,16z?entry=ttu">Location</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./index.html">Login</a></li> <!-- Added a login option -->
+        </ul>
+    </nav>
+
+
+
+    <section>
+        <h2>Complaint Details</h2>
+        <form action="submit_complaint.php" method="post" align="centre">
+            <label for="name">Your Name:*</label>
+            <input type="text" id="name" name="name" required>
+            <br />
+            <br />
+            <label for="email">Email Address:*</label>
+            <input type="email" id="email" name="email" required>
+            <br />
+             <br />
+             
+            <label for="phone">Phone Number:*</label>
+            <input type="tel" id="phone" name="phone">
+            <br />
+            <br />
+            <label for="location">Location of Complaint:*</label>
+            <input type="text" id="location" name="location" required>
+            <br />
+            <br />
+            <label for="complaint">Complaint Description:*</label>
+            <textarea id="complaint" name="complaint" rows="4" required></textarea>
+            <br />
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Government Waste Management</p>
+    </footer>
+</body>
+</html>

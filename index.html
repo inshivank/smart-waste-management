@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart Waste Management</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body >
+    <vido autoplay muted loop  id="backvideo" > <source src="Waste management.mp4" type="video/mp4"></video>
+    <script src="javas.js"></script>
+    <!-- header-->
+    <header>
+        <!--
+        <div class="logo">
+           <a href=""><img id="img" src="./gov.jpeg" alt="Logo"></a> 
+           <a href=""><img id="main" src="./kerela main logo.jpeg" alt=""></a>
+           <a href=""><img id="main1" src="./specks.jpeg" alt=""></a>
+        </div>-->
+        <h1></h1>
+    </header>
+    
+    
+
+    <!-- options-->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./complains.html">Complaints</a></li>
+            <li><a href="./events.html">Events</a></li>
+            <li><a href="https://www.google.com/maps/@31.0166075,77.0703414,16z?entry=ttu">Location</a></li>
+            <li><a href="./help.html">Help</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="#loginform">Login</a></li> <!-- Added a login option -->
+        </ul>
+    </nav>
+
+
+
+
+    <!-- container -->
+    <div class="container">
+        <!-- Your website content goes here -->
+        <p>Welcome to our website! This is where you can find information about our organization and the services we offer.</p>
+    </div>
+
+
+
+
+
+<!--  login form-->
+
+    <div id="loginform">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+      
+          <label for="role">Role:</label>
+          <select id="role" name="role">
+            <option value="user" selected>User</option>
+            <option value="admin">Admin</option>
+          </select>
+      
+          <div id="otp-container">
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" style="display: none;" required>
+          </div>
+      
+          <button type="button" id="get-otp-button" onclick="toggleOTP()">Get OTP</button>
+          <button type="button" id="verify-button" style="display: none;" onclick="verifyOTP()">Verify OTP</button>
+          
+          <input type="submit" id="login-button" value="Login" style="display: none;">
+        </form>
+      </div>
+
+
+
+      <!--paragraph -->
+      
+      <div class="para">
+        <p>Login to add complains, see events and many more</p>
+      </div>
+      
+
+
+       <!--events-->
+
+      
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    <footer class="footer">
+        <p>&copy; 2023 Government Of Kerala</p>
+        <a class="gov" href=""><img class="lastimg" src="./gov.jpeg" alt=""></a>
+        <a href=""><img class="lastimgr" src="./green.jpeg" alt=""></a>
+    </footer>
+</body>
+</html>

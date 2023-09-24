@@ -1,0 +1,90 @@
+nav {
+    background-color: #1ab8d7;
+    text-align: center;
+    padding-top:0 ;
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+}
+
+/* CSS for FAQ Page */
+
+/* CSS for FAQ Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #e82121;
+    color: #fff;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.question:hover {
+    color: #ff6b6b; /* Change color on hover */
+    background-color: #f0f0f0; /* Add background color on hover */
+}
+
+.answer {
+    display: none;
+    margin-left: 20px;
+    color: #666;
+}
+
+/* Style for answer animation */
+.answer.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
